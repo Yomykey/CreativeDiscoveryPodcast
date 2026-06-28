@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Discovery — Business · Investing · Life in Cambodia</title>
+  <meta name="description" content="Real conversations with the founders, investors, and expats building something in Cambodia. Hosted by Joachim Bekkevold.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.0.0/dist/tabler-icons.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Splitting.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-wordmark" aria-label="Creative Discovery home"><img src="assets/img/logo-trimmed.png" alt="Creative Discovery"></a>
+      <div class="nav-links">
+        <a href="episodes.html">Episodes</a>
+        <a href="guests.html">Guests</a>
+        <a href="about.html">About</a>
+        <a href="cambodia.html">Cambodia</a>
+        <a href="episodes.html" class="btn-primary">Listen now</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu">
+        <i class="ti ti-menu-2"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" aria-hidden="true">
+    <button class="nav-close" aria-label="Close menu">
+      <i class="ti ti-x"></i>
+    </button>
+    <a href="episodes.html">Episodes</a>
+    <a href="guests.html">Guests</a>
+    <a href="about.html">About</a>
+    <a href="cambodia.html">Cambodia</a>
+    <a href="sponsor.html">Sponsor</a>
+    <a href="be-a-guest.html">Be a guest</a>
+  </div>
+
+  <!-- Main content -->
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-container">
+       <div class="hero-grid">
+        <div class="hero-left">
+        <p class="eyebrow">Business · Investing · Life in Cambodia 🇰🇭</p>
+        <h1 class="hero-title" data-splitting>Real conversations from <span class="grad-text">inside Cambodia's</span> business scene</h1>
+        <p class="hero-sub">Hosted by Joachim Bekkevold — candid talks with the founders, investors, and expats actually building something in the Kingdom of Wonder.</p>
+
+        <div class="platform-row">
+          <a href="#" class="btn"><i class="ti ti-brand-spotify"></i> Spotify</a>
+          <a href="#" class="btn"><i class="ti ti-brand-apple"></i> Apple Podcasts</a>
+          <a href="#" class="btn"><i class="ti ti-brand-youtube"></i> YouTube</a>
+          <a href="#" class="btn"><i class="ti ti-brand-facebook"></i> Facebook</a>
+        </div>
+        </div>
+
+        <div class="hero-right">
+        <p class="eyebrow" style="margin-bottom: var(--s-2);">Latest episode</p>
+        <div class="latest-card">
+          <div class="latest-card-thumb" aria-hidden="true">
+            <i class="ti ti-microphone-2"></i>
+          </div>
+          <div class="latest-card-body">
+            <div class="latest-card-meta">
+              <span class="tag tag-investing">Investing</span>
+              <span class="latest-card-ep">EP 25</span>
+            </div>
+            <h3 class="latest-card-title">How We Built a $2M Property Portfolio in Phnom Penh</h3>
+            <p class="latest-card-guest">Sarah Chen · Mekong Property</p>
+            <div class="latest-card-play-row">
+              <button class="play-btn grad-fill" onclick="CD.playEpisode({title:'How We Built a $2M Property Portfolio in Phnom Penh', guest:'Sarah Chen', ep:'EP 25'})" aria-label="Play episode 25">
+                <i class="ti ti-player-play"></i>
+              </button>
+              <div class="latest-card-track">
+                <div class="latest-card-fill"></div>
+              </div>
+              <span class="latest-card-dur">51 min</span>
+            </div>
+          </div>
+        </div>
+        </div>
+       </div>
+      </div>
+    </section>
+
+    <!-- ====== TOPIC BROWSE ====== -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow" style="margin-bottom: var(--s-2);">Browse by interest</p>
+        <div class="topic-grid">
+          <a href="episodes.html?topic=business" class="topic-tile topic-tile--cyan">
+            <i class="ti ti-briefcase"></i>
+            <h3>Business</h3>
+            <p>Building, running, and scaling companies on the ground in Cambodia.</p>
+            <span class="topic-link">Explore <i class="ti ti-arrow-right"></i></span>
+          </a>
+          <a href="episodes.html?topic=investing" class="topic-tile topic-tile--orange">
+            <i class="ti ti-trending-up"></i>
+            <h3>Investing</h3>
+            <p>Property, equities, and where the smart money is looking.</p>
+            <span class="topic-link">Explore <i class="ti ti-arrow-right"></i></span>
+          </a>
+          <a href="episodes.html?topic=life" class="topic-tile topic-tile--violet">
+            <i class="ti ti-map-pin"></i>
+            <h3>Life in Cambodia</h3>
+            <p>Visas, banking, culture, and the real expat experience.</p>
+            <span class="topic-link">Explore <i class="ti ti-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== LATEST EPISODES ====== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Latest episodes</h2>
+          <a href="episodes.html" class="section-link">View all <i class="ti ti-arrow-right"></i></a>
+        </div>
+        <div class="episode-grid">
+          <div class="episode-card" data-topic="business">
+            <span class="episode-card-num">EP 24</span>
+            <span class="tag tag-business">Business</span>
+            <h3 class="episode-card-title">Starting a restaurant on Pub Street — what nobody tells you</h3>
+            <p class="episode-card-guest">Marcus Johansson</p>
+            <div class="episode-card-footer">
+              <span class="episode-card-dur"><i class="ti ti-clock"></i> 42 min</span>
+              <button class="play-btn-sm grad-fill" onclick="CD.playEpisode({title:'Starting a restaurant on Pub Street — what nobody tells you', guest:'Marcus Johansson', ep:'EP 24'})" aria-label="Play episode 24">
+                <i class="ti ti-player-play"></i>
+              </button>
+            </div>
+          </div>
+          <div class="episode-card" data-topic="life">
+            <span class="episode-card-num">EP 23</span>
+            <span class="tag tag-life">Life in Cambodia</span>
+            <h3 class="episode-card-title">Banking, visas, and taxes — the expat survival guide</h3>
+            <p class="episode-card-guest">Nadia Hoffman</p>
+            <div class="episode-card-footer">
+              <span class="episode-card-dur"><i class="ti ti-clock"></i> 55 min</span>
+              <button class="play-btn-sm grad-fill" onclick="CD.playEpisode({title:'Banking, visas, and taxes — the expat survival guide', guest:'Nadia Hoffman', ep:'EP 23'})" aria-label="Play episode 23">
+                <i class="ti ti-player-play"></i>
+              </button>
+            </div>
+          </div>
+          <div class="episode-card" data-topic="investing">
+            <span class="episode-card-num">EP 22</span>
+            <span class="tag tag-investing">Investing</span>
+            <h3 class="episode-card-title">The Cambodia stock exchange — hidden gem or buyer beware?</h3>
+            <p class="episode-card-guest">David Ngam</p>
+            <div class="episode-card-footer">
+              <span class="episode-card-dur"><i class="ti ti-clock"></i> 48 min</span>
+              <button class="play-btn-sm grad-fill" onclick="CD.playEpisode({title:'The Cambodia stock exchange — hidden gem or buyer beware?', guest:'David Ngam', ep:'EP 22'})" aria-label="Play episode 22">
+                <i class="ti ti-player-play"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== HOST STRIP ====== -->
+    <section class="section">
+      <div class="container">
+        <div class="host-strip reveal">
+          <div class="host-avatar" aria-label="Joachim Bekkevold portrait placeholder">
+            <span>JB</span>
+          </div>
+          <div class="host-body">
+            <p class="eyebrow">Your host</p>
+            <h2>Joachim Bekkevold</h2>
+            <p class="host-bio">I live and build here. Creative Discovery is the show I wish existed when I arrived — real talk from real people doing real things in Cambodia. No fluff, no tourist clichés.</p>
+            <a href="about.html" class="btn">More about Joachim <i class="ti ti-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== GUEST WALL PREVIEW ====== -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow" style="margin-bottom: var(--s-1);">Who's been on the show</p>
+        <div class="section-header" style="margin-bottom: var(--s-4);">
+          <h2>Guests</h2>
+          <a href="guests.html" class="section-link">See all guests <i class="ti ti-arrow-right"></i></a>
+        </div>
+        <div class="guest-grid">
+          <div class="guest-tile"><div class="guest-avatar"><span>SC</span></div><p class="guest-name">Sarah Chen</p><p class="guest-co">Mekong Property</p></div>
+          <div class="guest-tile"><div class="guest-avatar"><span>MJ</span></div><p class="guest-name">Marcus Johansson</p><p class="guest-co">Pub Street Group</p></div>
+          <div class="guest-tile"><div class="guest-avatar"><span>NH</span></div><p class="guest-name">Nadia Hoffman</p><p class="guest-co">KH Expat Advisory</p></div>
+          <div class="guest-tile"><div class="guest-avatar"><span>DN</span></div><p class="guest-name">David Ngam</p><p class="guest-co">Angkor Capital</p></div>
+          <div class="guest-tile"><div class="guest-avatar"><span>LS</span></div><p class="guest-name">Lena Sok</p><p class="guest-co">Riel Ventures</p></div>
+          <div class="guest-tile"><div class="guest-avatar"><span>TB</span></div><p class="guest-name">Tom Bradley</p><p class="guest-co">Phnom Penh Fintech</p></div>
+          <div class="guest-tile"><div class="guest-avatar"><span>MP</span></div><p class="guest-name">Maya Pich</p><p class="guest-co">Siem Reap Studios</p></div>
+          <div class="guest-tile"><div class="guest-avatar"><span>DR</span></div><p class="guest-name">Daniel Reyes</p><p class="guest-co">Mekong Logistics</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== NEWSLETTER ====== -->
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-strip">
+          <p class="eyebrow">Stay in the loop</p>
+          <h2>Get the weekly Cambodia <span class="grad-text">business briefing</span></h2>
+          <p class="newsletter-copy">Episode drops, guest highlights, and one useful thing about doing business in KH — straight to your inbox.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('.newsletter-success').hidden = false; this.querySelector('.newsletter-fields').hidden = true;">
+            <div class="newsletter-fields">
+              <input type="email" placeholder="you@company.com" required aria-label="Email address">
+              <button type="submit" class="btn-primary">Subscribe <i class="ti ti-arrow-right"></i></button>
+            </div>
+            <p class="newsletter-success" hidden>You're in. Watch your inbox.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-wordmark"><img src="assets/img/logo-trimmed.png" alt="Creative Discovery"></div>
+        <p class="footer-copy">
+          &copy; 2026 Creative Discovery · Business · Investing · Life in Cambodia 🇰🇭
+        </p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-nav">
+          <a href="sponsor.html">Sponsor</a>
+          <a href="be-a-guest.html">Be a guest</a>
+        </div>
+        <div class="footer-platforms">
+          <a href="#" aria-label="Spotify" title="Spotify"><i class="ti ti-brand-spotify"></i></a>
+          <a href="#" aria-label="Apple Podcasts" title="Apple Podcasts"><i class="ti ti-brand-apple"></i></a>
+          <a href="#" aria-label="YouTube" title="YouTube"><i class="ti ti-brand-youtube"></i></a>
+          <a href="#" aria-label="Facebook" title="Facebook"><i class="ti ti-brand-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mini Player (hidden by default) -->
+  <div class="mini-player" hidden>
+    <div class="mini-player-inner">
+      <button class="mp-play" onclick="CD.togglePlay()" aria-label="Play or pause">
+        <i class="ti ti-player-play"></i>
+      </button>
+      <div class="mp-info">
+        <div class="mp-title">Episode title</div>
+        <div class="mp-guest">Guest name</div>
+      </div>
+      <div class="mp-progress">
+        <div class="mp-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+          <div class="mp-fill"></div>
+        </div>
+        <span class="mp-time">0:00 / 45:00</span>
+      </div>
+      <div class="mp-volume">
+        <i class="ti ti-volume"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+  <!-- App JS -->
+  <script src="assets/js/player.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
