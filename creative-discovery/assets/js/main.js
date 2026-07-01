@@ -14,12 +14,18 @@ if (reduceMotion || !window.gsap) revealHeroTitle();
 // Hard backstop: whatever happens, never leave the hero hidden after 1.5s.
 setTimeout(revealHeroTitle, 1500);
 
-// Smooth scroll (Lenis) — skip if reduced motion
+// Smooth scroll (Lenis) — skip if reduced motion.
+// When GSAP is present it drives Lenis via gsap.ticker (below).
+// The manual RAF loop runs only as a fallback when GSAP is absent,
+// preventing Lenis from being ticked twice per frame (which causes
+// the scroll lock / lag on first load).
 let lenis;
 if (!reduceMotion && window.Lenis) {
   lenis = new Lenis({ duration: 1.1, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
-  function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
-  requestAnimationFrame(raf);
+  if (!window.gsap) {
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+  }
 }
 
 // Splitting.js — run BEFORE GSAP so .word/.char elements exist for animation
